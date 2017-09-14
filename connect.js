@@ -19,6 +19,12 @@ function addDisc(playerOne){
     this.color = 'red';
     this.id = id.toString();
     id++;
+    function addDisc(playerTwo){
+        this.player = playerTwo;
+        this.color = 'black';
+        this.id = id.toString();
+        id++;
+    }
 }
 function changeColor() {
     $('#A1').css("backgroundColor", "red");
