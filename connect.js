@@ -3,6 +3,10 @@ const board = {
     yAxis: 6,
     piecesToConnectForWin: 4
 };
+var currentCol;
+var currentRow;
+var currentPlayer;
+
 const playerOne = {
     color: "red",
 };
