@@ -1,8 +1,8 @@
-const board = {
-    xAxis: 7,
-    yAxis: 6,
-    piecesToConnectForWin: 4
-};
+let board = [
+    [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], 
+    [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]
+
+];
 var currentCol;
 var currentRow;
 var currentPlayer;
@@ -18,17 +18,13 @@ const disc = {
     playerOne: 1,
     playerTwo: 2,
 };
-function addDisc(playerOne){
+function addDisc1(playerOne){
     this.player = playerOne;
     this.color = 'red';
-    this.id = id.toString();
-    id++;
-    function addDisc(playerTwo){
-        this.player = playerTwo;
-        this.color = 'black';
-        this.id = id.toString();
-        id++;
-    }
+}
+function addDisc2(playerTwo){
+    this.player = playerTwo;
+    this.color = 'black';
 }
 function changeColor() {
     $('#A1').css("backgroundColor", "red");
