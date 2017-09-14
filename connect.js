@@ -14,6 +14,12 @@ const disc = {
     playerOne: 1,
     playerTwo: 2,
 };
+function addDisc(playerOne){
+    this.player = playerOne;
+    this.color = 'red';
+    this.id = id.toString();
+    id++;
+}
 function changeColor() {
     $('#A1').css("backgroundColor", "red");
     console.log("test");

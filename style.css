@@ -12,6 +12,12 @@ h1{
     height: 70px;
     border: 0; 
 }
+.disc.red{
+    background: red;
+}
+.disc.black{
+    background: black;
+}
 .board button{
     border-radius: 50%;
     width: 70px;
