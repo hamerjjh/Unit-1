@@ -6,7 +6,12 @@ h1{
     text-align:center;
     margin-bottom:10px;
 }
-
+.disc {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: 0; 
+}
 .board button{
     border-radius: 50%;
     width: 70px;
@@ -22,3 +27,4 @@ h1{
 .second{
     justify-content: space-around;
 }
+
