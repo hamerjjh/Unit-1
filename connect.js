@@ -35,3 +35,4 @@ $('A1').click(function(){
     $(this).css('backgroundColor', 'red');
 });
 $('#A1').on("click",changeColor)
+
