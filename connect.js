@@ -23,7 +23,7 @@ function addDisc2(playerTwo){
     this.color = 'black';
 }
 function changeColor() {
-    $('.testclass').css("backgroundColor", player,);
+    $('.testclass').css("background-color", player);
     console.log("test");
 };
 
@@ -36,15 +36,28 @@ $('.testclass').on("click",SwitchPlayer)
     //Math.floor().on("click")
 //}
 
+
+
+function checkForWin(disc, currentCol, currentRow) {
+    console.log('Checking for win')
+    return (checkHorizontalWin(disc, currentCol, currentRow) || 
+            checkVerticalWin(disc, currentCol, currentRow) || 
+            checkDiagonalWin(disc, currentCol, currentRow))
+  }
+
 function SwitchPlayer () {
-    if (player === "red"){
+    if (player === "red"){ 
         player = "black";
         console.log("Red Test");
+        checkForWin(black, )
     } else {
         player = "red";
         console.log("Black Test");
+        checkForWin(red,)
     }
     }
 function DropDisc(target, yAxis) {
     $(target.children()[5-yAxis]).addClass('playerOne', 'playerTwo');
 }
+
+
