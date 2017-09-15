@@ -36,3 +36,14 @@ $('A1').click(function(){
 });
 $('#A1').on("click",changeColor)
 
+//function DropDisc () {
+    //Math.floor().on("click")
+//}
+
+function SwitchPlayer () {
+    if (player === 1){
+        player = red;
+    } else {
+        player = 2;
+    }
+    }
