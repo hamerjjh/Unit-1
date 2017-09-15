@@ -7,12 +7,8 @@ var currentCol;
 var currentRow;
 var currentPlayer;
 
-const playerOne = {
-    color: "red",
-};
-const playerTwo = {
-    color: "black",
-};
+let player= "red";
+
 const disc = {
     none: 0,
     playerOne: 1,
@@ -27,23 +23,28 @@ function addDisc2(playerTwo){
     this.color = 'black';
 }
 function changeColor() {
-    $('#A1').css("backgroundColor", "red");
+    $('.testclass').css("backgroundColor", player,);
     console.log("test");
 };
 
-$('A1').click(function(){
-    $(this).css('backgroundColor', 'red');
-});
-$('#A1').on("click",changeColor)
+//$('testclass').click(function(){
+//    $(this).css('backgroundColor', 'red');
+//});
+$('.testclass').on("click",SwitchPlayer)
 
 //function DropDisc () {
     //Math.floor().on("click")
 //}
 
 function SwitchPlayer () {
-    if (player === 1){
-        player = red;
+    if (player === "red"){
+        player = "black";
+        console.log("Red Test");
     } else {
-        player = 2;
+        player = "red";
+        console.log("Black Test");
     }
     }
+function DropDisc(target, yAxis) {
+    $(target.children()[5-yAxis]).addClass('playerOne', 'playerTwo');
+}
