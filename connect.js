@@ -30,13 +30,16 @@ function changeColor() {
 //$('testclass').click(function(){
  //   $(this).css('backgroundColor', 'red');
 //});
-$('.testclass').on("click",SwitchPlayer)
+$('.testclass').on("click", SwitchPlayer)
+//$('.testclass').on("click", changeColor)
+
 
 //function DropDisc () {
     //Math.floor().on("click")
 //}
 
-
+//Re add array with IDs for check win function 
+//Get color to pop up for when player changes
 function SwitchPlayer () {
     if (player === "red"){ 
         player = "black";
@@ -50,3 +53,11 @@ function SwitchPlayer () {
 function DropDisc(target, yAxis) {
     $(target.children()[5-yAxis]).addClass('playerOne', 'playerTwo')
 }
+
+var endGame = function(result) {
+    if (result.winner === 0) {
+      console.log("TIE GAME");
+    } else {
+      console.log("PLAYER " + result.winner + " WINS.")
+    }
+  }
