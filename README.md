@@ -13,6 +13,6 @@ Write a _Connect 4_ game that allows two players to compete. The players are sha
 
 Trello Board: https://trello.com/b/NLl1oTaX/welcome-board
 
-<img src="Winner Board.jpg">
-<img scr="Home Board.jpg">
-<img scr="Reset Board.jpg">
+<img src="images/Winner-Board.jpg">
+<img src="imgages/Home-Board.jpg">
+<img src="images/Reset-Board.jpg">
